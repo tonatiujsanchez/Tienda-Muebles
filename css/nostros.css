@@ -1,0 +1,11 @@
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-columns: repeat( auto-fit, minmax( 24rem, 1fr ) );
+    column-gap: 4rem;
+    align-items: flex-start;
+    padding: 1rem;
+}
+.contenido-nosotros p{
+    margin: 0;
+}

@@ -61,7 +61,6 @@ img{
 
 .btn-principal{
     background-color: var(--verde);
-    display: block;
     color: var(--blanco);
     text-transform: uppercase;
     font-weight: 600;
@@ -69,7 +68,6 @@ img{
     transition: background-color .3s ease-in-out;
     text-align: center;
     border: none;
-    width: 100%;
     border-radius: 0.25rem;
 }
 
@@ -77,6 +75,18 @@ img{
     background-color: #769C02;
     cursor: pointer;
 }
+
+.btn-full{
+    display: block;
+    width: 100%;
+}
+
+.btn-inline{
+    display: inline-block;
+    width: 20rem;
+    
+}
+
 
 
 /* Utilidades */
@@ -296,4 +306,19 @@ img{
     margin-top: 4rem;
     grid-column: 1/4;
     text-align: center;
+}
+
+
+/* Páginas */
+
+.main-pagina{
+    margin-top: 36px;
+}
+
+
+/* Entrada blog */
+
+.contendor-entrada-blog{
+    max-width: 48rem;
+    margin: 0 auto;
 }

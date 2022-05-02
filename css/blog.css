@@ -1,0 +1,32 @@
+
+
+/* BLOG */
+
+
+.contenedor-blog{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 3rem;
+}
+
+.entrada{
+    border-bottom: 1px solid #E1E1E1;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+}
+
+.entrada:last-of-type{
+    border-bottom: none;
+}
+
+.entrada-meta{
+    display: flex;
+    gap: 2rem;
+}
+
+.entrada-meta p{
+    font-weight: 600;
+}
+.entrada-meta span{
+    color: var(--azul);
+}
