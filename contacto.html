@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce | Contacto </title>
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
+    </header>
+
+    <div class="contenedor-navegacion">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+
+   
+    
+    
+    
+
+    <main class="contenido-principal contenedor main-pagina">
+        <h2 class="text-center">Contacto</h2>
+
+        <form class="formulario">
+
+            <fieldset>
+                <legend>Tus Datos</legend>
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Tu Nombre" required />
+                </div>
+                <div class="campo">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" placeholder="El asunto del mensaje" required>
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="correo@email.com" required>
+                </div>
+                <div class="campo">
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" id="tel" placeholder="Tu Telefono fijo o celular">
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="10" cols="50"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>País</legend>
+                <div class="campo">
+                    <label for="pais">País</label>
+                    <select id="pais">
+                        <option value="">--Seleccione--</option>
+                        <option value="mexico">México</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="espana">España</option>
+                        <option value="chile">Chile</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Infomación extra</legend>
+                <div class="radios-tipo">
+                    <div class="campo">
+                        <label for="cliente">Cliente</label>
+                        <input type="radio" id="cliente" name="tipo" value="cliente">
+                    </div>
+                    <div class="campo">
+                        <label for="proveedor">Proveedor</label>
+                        <input type="radio" id="proveedor" name="tipo" value="proveedor">
+                    </div>
+                </div>
+                <div class="campo">
+                    <label for="categoria">Categoría de Interés</label>
+                    <input type="text" list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Cocina">
+                        <option value="Exterior">
+                        <option value="Recamaras">
+                        <option value="Oficina">
+                        <option value="Televesión">
+                    </datalist>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="btn-principal btn-full">
+        </form>
+
+        
+    </main>
+
+
+    <footer class="footer ">
+        <div class="footer-contenido contenedor">
+            <div class="footer-section">
+                <h3>Categorías</h3>
+                <nav>
+                    <a href="#">Cocina</a>
+                    <a href="#">Oficina</a>
+                    <a href="#">Jardin</a>
+                    <a href="#">Cochera</a>
+                    <a href="#">Dormitorios</a>
+                </nav>
+            </div>
+            <div class="footer-section">
+                <h3>Sobre nosotros</h3>
+                <nav>
+                    <a href="#">Nuestra Historia</a>
+                    <a href="#">Misión, Visión y Valores</a>
+                    <a href="#">Carrera</a>
+                    <a href="#">Políticas de Provacidad</a>
+                    <a href="#">Términos del Servicio</a>
+                </nav>
+            </div>
+            <div class="footer-section">
+                <h3>Soporte</h3>
+                <nav>
+                    <a href="#">Preguntas frecuentes</a>
+                    <a href="#">Ayuda en linea</a>
+                    <a href="#">Confianza y Seguridad</a>
+                </nav>
+            </div>
+        </div>
+
+
+        <p class="footer-copy">Todos los derechos reservados @MueblesTlapalli</p>
+    </footer>
+    
+    
+
+
+</body>
+</html>
