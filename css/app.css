@@ -150,6 +150,27 @@ img{
 .navegacion-principal a{
     font-weight: 600;
     font-size: 1rem;
+    position: relative;
+    padding-block: 0.3rem;
+}
+.navegacion-principal a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    border-top: solid var(--azul) 4px;
+    transition: all .4s ease-out,
+                        right .4s cubic-bezier(0,.5,0,1);
+}
+.navegacion-principal a:hover::before {
+    left: -0.5rem;
+    right: -0.5rem;
+    border-color: var(--azul);
+}
+.navegacion-principal a.activo::before {
+    left: -0.5rem;
+    right: -0.5rem;
+    border-color: var(--azul);
 }
 
 @media (min-width: 768px){
